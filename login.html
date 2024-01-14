@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Sign Up</h1>
+        <form class="formbox" method="post" name="form" ">
+            <div class="forminput" id="nameField">
+                <input type="text" placeholder="Enter Name" name="name">
+            </div>
+
+            <div class="error" id="nameError">Name must be 8 characters long.</div>
+            
+            <div class="forminput">
+                <input type="email" placeholder="Enter Email" name="email">
+            </div>
+
+            <div class="error" id="emailError">Enter correct Email.</div>
+            <div class="forminput last">
+                <input type="password" placeholder="Enter Password" name="password">
+            </div>
+            <div class="error" id="passError">Password mush be 8 characters long.</div>
+            <div class="btnfield">
+                <button type="button" id="signUp">Sign Up</button>
+                <button type="button" id="signIn" class="disable">Sign In</button>
+            </div>
+        </form>
+    </div>
+
+<script src="login.js"></script>
+</body>
+</html>
